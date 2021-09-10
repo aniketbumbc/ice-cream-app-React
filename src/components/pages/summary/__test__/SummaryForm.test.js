@@ -13,7 +13,7 @@ it('Should render checkbox correctly', () => {
   expect(confirmButton).toBeDisabled();
 });
 
-it('Should enable button on first click and disables on second click', () => {
+it('Should enable button on first click and disable on second click checkbox', () => {
   render(<SummaryFrom />);
   const checkBoxEle = screen.getByRole('checkbox', {
     name: 'I agree to Terms and Conditions',
