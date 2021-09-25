@@ -30,7 +30,6 @@ it('Should display image for each toppings from server', async () => {
 
 it('Should display image for correct toppings', async () => {
   render(<Options optionType='toppings' />);
-  debugger;
   const toppingImages = await screen.findAllByRole('img', {
     name: /toppings$/i,
   });
