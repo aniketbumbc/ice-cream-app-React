@@ -19,4 +19,19 @@ export const handlers = [
       ])
     );
   }),
+
+  rest.get('http://localhost:3030/toppings', (req, res, ctx) => {
+    return res(
+      ctx.json([
+        {
+          name: 'Gummi bears',
+          imagePath: '/images/gummi-bears.png',
+        },
+        {
+          name: 'Mochi',
+          imagePath: '/images/mochi.png',
+        },
+      ])
+    );
+  }),
 ];
