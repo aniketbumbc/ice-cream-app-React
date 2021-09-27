@@ -1,4 +1,4 @@
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import Options from '../Options';
 import { OrderDetailsProvider } from '../../../../context/OrderDetails';
