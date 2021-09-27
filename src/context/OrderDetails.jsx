@@ -1,13 +1,6 @@
 import { createContext, useContext, useState, useMemo, useEffect } from 'react';
-import pricePerItem from '../constant';
-
-function formatCurrency(amount) {
-  return new Intl.NumberFormat('en-US', {
-    style: 'currency',
-    currency: 'USD',
-    minimumFractionDigits: 2,
-  }).format(amount);
-}
+import { pricePerItem } from '../constant';
+import { formatCurrency } from '../utilities';
 
 const OrderDetails = createContext();
 
@@ -17,7 +10,9 @@ function useOrderDetails() {
   const context = useContext(OrderDetails);
 
   if (!context) {
-    throw new Error('No providers');
+    throw new Error(
+      '"useOrderDetails must be used within an OrderDetailsProvider" '
+    );
   }
   return context;
 }

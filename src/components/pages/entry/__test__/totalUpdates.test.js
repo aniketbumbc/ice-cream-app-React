@@ -12,7 +12,7 @@ it('update scoop subtotal when change', async () => {
 
   // update vanilla scoop
 
-  const vanillaInput = await screen.findAllByRole('spinbutton', {
+  const vanillaInput = await screen.findByRole('spinbutton', {
     name: 'Vanilla',
   });
 
