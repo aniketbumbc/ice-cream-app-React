@@ -7,7 +7,7 @@ import OrderEntry from '../OrderEntry';
 import { rest } from 'msw';
 import { server } from '../../../../mock/Server';
 
-fit('handlers error for scoops and topping', async () => {
+it('handlers error for scoops and topping', async () => {
   server.resetHandlers(
     rest.get('http://localhost:3030/scoops', (req, res, ctx) =>
       res(ctx.status(500))
