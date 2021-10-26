@@ -27,7 +27,7 @@ export default function OrderConformation({ setOrderPhase }) {
       <div style={{ textAlign: 'center' }}>
         <h1>Thank You</h1>
         <p>Your Order number is {orderNumber}</p>
-        <p style={{ fontSize: '25%' }}>
+        <p style={{ fontSize: '70%' }}>
           as per our terms and conditions, nothing will happen now
         </p>
         <Button onClick={handleClick}>Create new order</Button>
